@@ -1,0 +1,55 @@
+﻿# POST TrackLine
+http://localhost:1337/Route/TrackLine?ValueL=${VALUE}
+http://localhost:1337/Route/TrackLine
+ValueL = Value in Meter [m] und Bruchteilen von Metern.
+Content-Type:application/json
+{
+	"ValueL": 1.234567
+}
+
+# POST TrackTurnLeft
+http://localhost:1337/Route/TrackTurnLeft?ValueA=${VALUE}
+http://localhost:1337/Route/TrackTurnLeft
+Content-Type:application/json
+{
+	"ValueA": 1.234567
+}
+
+# POST TrackTurnRight
+http://localhost:1337/Route/TrackTurnRight?ValueA=${VALUE}
+http://localhost:1337/Route/TrackTurnRight
+Content-Type:application/json
+{
+	"ValueA": 1.234567
+}
+
+# POST TrackArcLeft
+http://localhost:1337/Route/TrackArcLeft?ValueA=${VALUE}&ValueL=${VALUE}
+http://localhost:1337/Route/TrackArcLeft
+Content-Type:application/json
+{
+	"ValueA": 1.234567,
+	"ValueL": 1.234567
+}
+
+#POST TrackArcRight
+http://localhost:1337/Route/TrackArcRight?ValueA${VALUE}&ValueL=${VALUE}
+http://localhost:1337/Route/TrackArcRigh
+Content-Type:application/json
+{
+	"ValueA": 1.234567,
+	"ValueL": 1.234567
+}
+
+# POST Start
+http://localhost:1337/Start
+
+# GET Protokoll
+http://localhost:1337/Log
+
+# GET Robot
+http://localhost:1337/Robot
+
+
+
+
